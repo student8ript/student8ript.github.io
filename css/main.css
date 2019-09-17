@@ -1,209 +1,177 @@
-/* Специфікація */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
 body {
-  font-family: 'PT Sans', sans-serif;
+	background-color: #f2f2f2;
+	font-family: "Lato";
+	font-weight: 300;
+	font-size: 16px;
+	color: #555;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	
+	margin-top:70px;
 }
 
-ul, li {
-  display: block;
-  margin: 0;
-  padding: 0;
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Raleway";
+	font-weight: 300;
+	color: #333;
 }
 
-h1, h2, h3, h4, h5 {
-  font-weight: 700;
-  color: #000;
+p {
+	line-height: 28px;
+	margin-bottom: 25px;
 }
 
-h3 {
-  font-weight: 400;
+.centered {
+	text-align: center;
 }
 
-h2 {
-  text-align: center;
+a {
+	color: #f85c37;
 }
 
-p, div, a, span {
-  line-height: 1.2em;
+a:hover, a:focus {
+	color: #7b7b7b;
+	text-decoration: none;
+	outline: 0;
 }
 
-.title {
-  padding-top: 100px;
-  padding-bottom: 70px;
-  text-align: center;
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
-.title__main {
-  font-size: 32px;
+.navbar {
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
-.title__text {
-  font-size: 20px;
-  width: auto;
-  margin: 0 auto;
+.navbar-inverse {
+	background: #2d2d2d;
+	border-color: #2d2d2d;
 }
 
-.yellow {
-  color: #fcdb00;
+.navbar-inverse .navbar-nav > .active > a {
+	background-color: #ff7878;
 }
 
-/* Перший екран */
-.header {
-  background-color: #fcdb00;
-  color: #010101;
-  padding-top: 50px;
-  padding-bottom: 105px;
+.navbar-inverse .navbar-brand {
+	color: #999;
+	font-weight: bolder;
+	font-size: 22px;
+	letter-spacing: 1px;
 }
 
-.menu {
-
+#headerwrap {
+	background: url(../img/header-bg.jpg) no-repeat center top;
+	margin-top: -10px;
+	padding-top: 20px;
+	text-align: center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 500px;
+	width: 100%;
+	
+	background-size:100%;
+	
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-0-background-size: cover;
+	background-size: cover;
 }
 
-.menu__item {
-  margin: 0 57px;
+#headerwrap h1 {
+	margin-top: 100px;
+	color: white;
+	font-size: 70px;
+	font-weight: 300;
+	letter-spacing: 3px;
 }
 
-.menu__item a {
-  font-size: 22px;
-  font-weight: 700;
-  color: #000;
+#headerwrap h2 {
+	color: white;
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
-.offer {
-  margin-top: 117px;
+.w {
+	padding-top: 35px;
 }
 
-.offer__title {
-  font-size: 32px;
-  margin-bottom: 15px;
+.w h4 {
+	font-size: 25px;
 }
 
-.offer__intro {
-  font-size: 20px;
-  line-height: 1.3em;
+#dg {
+	background: #e0e0e0;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
 }
 
-.offer__text {
-  font-size: 16px;
-  margin-top: 20px;
+#dg h4{
+	font-size: 40px;
 }
 
-.icons__item a {
-  color: #000;
-  font-size: 42px;
-  margin-right: 30px;
-  transition: all 0.3s ease;
+.tilt {
+	-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		  -o-transition: all 0.5s ease;
+		 -ms-transition: all 0.5s ease;
+			  transition: all 0.5s ease;
 }
 
-.icons__item a:hover {
-  text-decoration: none;
-  color: #ff4800;
+.tilt:hover {
+	-webkit-transform: rotate(-10deg);
+  	  -moz-transition: rotate(-10deg);
+		 -o-transition: rotate(-10deg);
+		-ms-transition: rotate(-10deg);
+		    transition: rotate(-10deg);
 }
 
-.ipad {
-  display: block;
-  margin: 60px auto 0;
+.wb {
+	padding-top: 35px;
+	margin-bottom: 0;
 }
 
-.feature {
-  margin-bottom: 65px;
+.wb h4 {
+	font-size: 35px;
 }
 
-.feature__icon {
-  font-size: 50px;
-  margin-right: 37px;
-  color: #000;
+#lg {
+	background: #ececec;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
 }
 
-.feature__text {
-  color: #898989;
+#lg h4 {
+	font-size: 45px;
+	margin-bottom: 40px;
 }
 
-.touch {
-  background-color: #010101;
-  color: #fff;
+#r {
+	background: #ff7878;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 
-.form {
-  text-align: center;
+#r h4 {
+	color: white;
+	font-size: 45px;
 }
 
-.form__input {
-  background-color: #fff;
-  font-size: 16px;
-  font-family: 'PT Sans', sans-serif;
-  border-radius: 5px;
-  width: 580px;
-  padding: 15px 0;
-  margin-right: 21px;
-  border: 0;
-  padding-left: 23px;
-  outline: none;
-}
-
-.form__btn {
-  font-family: 'PT Sans', sans-serif;
-  background-color: #fcdb00;
-  color: #000;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: 700;
-  border-radius: 5px;
-  width: 126px;
-  border: 0;
-  padding: 14px 0;
-  cursor: pointer;
-  outline: none;
-}
-
-.brands {
-  margin: 50px 0 100px 0;
-  text-align: center;
-}
-
-.brands__icon {
-  font-size: 30px;
-  margin-right: 30px;
-  color: #000;
-  padding: 10px;
-  background-color: #fcdb00;
-  width: 45px;
-  height: 45px;
-  border-radius: 10px;
-}
-
-.footer {
-  background-color: #010101;
-  color: #aaa;
-}
-
-/* Медіа-запити */
-@media screen and (max-width: 992px){
-  .logo {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 30px;
-  }
-
-  .offer {
-    text-align: center;
-  }
-
-  .form__input{
-    width: 100%;
-  }
-
-  .form__btn {
-    margin-top: 20px;
-    width: 100%;
-  }
-
-  .menu__item {
-    margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 576px){
-
+#r p {
+	color: white;
 }
 
 
@@ -236,6 +204,12 @@ p, div, a, span {
 
 
 
-/*
 
-*/
+
+
+
+
+
+
+
+
